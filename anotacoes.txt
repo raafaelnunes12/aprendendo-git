@@ -4,3 +4,10 @@
 
 ** ver conteudo da pasta **
   ls
+
+------
+
+Enviando arquivos para o git;
+1 - Git status: para identificar as pendências;
+2 - Git add;
+3 - Git add - m 'descrição do commit';
