@@ -1,0 +1,6 @@
+** navegar na pasta**
+  cd - para avancar
+  cd .. - para voltar o dir
+
+** ver conteudo da pasta **
+  ls
