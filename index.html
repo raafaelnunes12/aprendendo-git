@@ -8,13 +8,25 @@
 	<div>
 		<h1>Formulário HTML</h1>
 		<form>
-			<label>Nome:</label>
-			<input type="text"><br />
-			<label>Telefone:</label>
-			<input type="text"><br />
-			<button type="button">Enviar</button>
-			<button type="button">Cancelar</button>
-
+			<label>
+				<span>Nome:</span>
+				<input type="text">
+			</label>
+			<br>
+			<label>
+				<span>Telefone:</span>
+				<input type="text">
+			</label>
+			<br>
+			<label for="cars">Sexo</label>
+			<select name="cars" id="cars">
+				<option>M</option>
+				<option>F</option>
+			</select>
+			<div>
+				<button type="button">Enviar</button>
+				<button type="button">Cancelar</button>
+			</div>	
 		</form>
 	</div>
 </body>
