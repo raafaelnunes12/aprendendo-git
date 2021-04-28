@@ -3,29 +3,70 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Formulario</title>
+	<script src="https://kit.fontawesome.com/507941e964.js" crossorigin="anonymous"></script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+		.formulario{
+			border: 1px solid gray;
+			border-radius: 10px;
+			padding: 20px;
+			width: 50%;
+		}
+		.botao{
+			padding: 0px 0px;
+		}
+		label{
+			font-family: 'Roboto', sans-serif;
+			width: 200px;
+		}
+		.botao{
+			padding: 10px 0px;
+		}
+		button{
+			background-color:white;
+			padding: 5px;
+			border: 1px solid gray;
+		}
+		button:hover{
+			background-color: gray;
+			color:white;
+		}
+		.fas{
+			margin-right: 3px;
+		}
+		option{
+			font-family: 'Roboto', sans-serif;
+		}
+
+	</style>
 </head>
 <body>
 	<div>
 		<h1>Formulário HTML</h1>
-		<form>
-			<label>
-				<span>Nome:</span>
-				<input type="text">
-			</label>
-			<br>
-			<label>
-				<span>Telefone:</span>
-				<input type="text">
-			</label>
-			<br>
-			<label for="cars">Sexo:</label>
-			<select name="cars" id="cars">
-				<option>M</option>
-				<option>F</option>
-			</select>
+		<form class="formulario">
 			<div>
-				<button type="button">Enviar</button>
-				<button type="button">Cancelar</button>
+				<div>
+					<label>Nome:</label><br>
+					<input type="text">
+				</div>
+				<div>
+					<label>Telefone:</label><br>
+					<input type="text" placeholder="(XX) XXXXX-XXXX">
+				</div>
+				<div>
+					<label>Sexo:</label><br>
+						<select name="cars" id="cars">
+							<option>--Selecione--</option>
+							<option>Masculino</option>
+							<option>Feminino</option>
+						</select>
+				</div>
+			</div>
+			<div class="botao">
+				<button type="button"><i class="fas fa-share"></i>Enviar</button>
+				<button type="button"><i class="fas fa-minus-circle"></i>Limpar</button>
 			</div>	
 		</form>
 	</div>
