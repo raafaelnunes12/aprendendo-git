@@ -8,11 +8,20 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+		h1{
+			font-family: 'Roboto', sans-serif;
+			opacity:0.5;
+		}
+		h1:hover
+		{
+        	opacity:1;
+		}
 		.formulario{
 			border: 1px solid gray;
 			border-radius: 10px;
 			padding: 20px;
 			width: 50%;
+			background-color: whitesmoke;
 		}
 		.botao{
 			padding: 0px 0px;
@@ -39,36 +48,55 @@
 		option{
 			font-family: 'Roboto', sans-serif;
 		}
+		.campos{
+			margin-top: 10px;
+		}
+		select{
+			width: 180px;
+		}
 
 	</style>
 </head>
-<body>
-	<div>
-		<h1>Formulário HTML</h1>
-		<form class="formulario">
-			<div>
+	<body>
+		<div>
+			<h1>Formulário HTML</h1>
+			<form class="formulario">
 				<div>
-					<label>Nome:</label><br>
-					<input type="text">
+					<div>
+						<label>Nome:</label><br>
+						<input type="text">
+					</div>
+					<div class="campos">
+						<label>Email:</label><br>
+						<input type="email">
+					</div>
+					<div class="campos">
+						<label>Telefone:</label><br>
+						<input type="tel" placeholder="(XX) XXXXX-XXXX">
+					</div>
+					<div class="campos">
+						<label>Sexo:</label><br>
+							<select>
+								<option>--Selecione--</option>
+								<option>Masculino</option>
+								<option>Feminino</option>
+							</select>
+					</div>
+				</div>	
+				<div class="campos">
+					<label>Estado civil:</label><br>
+					<input type="checkbox" id="casado" name="casado">
+					<label for="casado"> Casado</label>
+					<input type="checkbox" id="solteiro" name="solteiro">
+					<label for="solteiro"> Solteiro</label>
+					<input type="checkbox" id="divorciado" name="divorciado">
+					<label for="divorciado"> Divorciado</label><br>
 				</div>
-				<div>
-					<label>Telefone:</label><br>
-					<input type="text" placeholder="(XX) XXXXX-XXXX">
+				<div class="botao">
+					<button type="button"><i class="fas fa-share"></i>Enviar</button>
+					<button type="button"><i class="fas fa-minus-circle"></i>Cancelar</button>
 				</div>
-				<div>
-					<label>Sexo:</label><br>
-						<select name="cars" id="cars">
-							<option>--Selecione--</option>
-							<option>Masculino</option>
-							<option>Feminino</option>
-						</select>
-				</div>
-			</div>
-			<div class="botao">
-				<button type="button"><i class="fas fa-share"></i>Enviar</button>
-				<button type="button"><i class="fas fa-minus-circle"></i>Limpar</button>
-			</div>	
-		</form>
-	</div>
-</body>
+			</form>
+		</div>
+	</body>
 </html>
