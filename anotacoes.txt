@@ -5,10 +5,14 @@
 ** ver conteudo da pasta **
   ls
 
-------
-
-Enviando arquivos para o git;
+** Enviando arquivos para o git; **
 1 - Git status: para identificar as pendências;
 2 - Git add;
 3 - Git add - m 'descrição do commit';
 4 - Git push.
+
+** Criar novo branch **
+   git checkout -b <nome>
+
+** Navegar para um branch **
+   git checkout <nome>
