@@ -4,13 +4,13 @@
 	<meta charset="utf-8" />
 	<title>Formulario</title>
 	<script src="https://kit.fontawesome.com/507941e964.js" crossorigin="anonymous"></script>
-
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 		h1{
 			font-family: 'Roboto', sans-serif;
 			opacity:0.5;
+			margin: 0 0 10px 0;
 		}
 		h1:hover
 		{
@@ -54,49 +54,53 @@
 		select{
 			width: 180px;
 		}
-
 	</style>
 </head>
-	<body>
-		<div>
-			<h1>Formulário HTML</h1>
-			<form class="formulario">
+<body>
+	<div>
+		<h1>Formulário HTML</h1>
+		<form class="formulario">
+			<div>
 				<div>
-					<div>
-						<label>Nome:</label><br>
-						<input type="text">
-					</div>
-					<div class="campos">
-						<label>Email:</label><br>
-						<input type="email">
-					</div>
-					<div class="campos">
-						<label>Telefone:</label><br>
-						<input type="tel" placeholder="(XX) XXXXX-XXXX">
-					</div>
-					<div class="campos">
-						<label>Sexo:</label><br>
-							<select>
-								<option>--Selecione--</option>
-								<option>Masculino</option>
-								<option>Feminino</option>
-							</select>
-					</div>
-				</div>	
+					<label>Nome:</label><br>
+					<input type="text">
+				</div>
 				<div class="campos">
-					<label>Estado civil:</label><br>
-					<input type="checkbox" id="casado" name="casado">
-					<label for="casado"> Casado</label>
-					<input type="checkbox" id="solteiro" name="solteiro">
-					<label for="solteiro"> Solteiro</label>
-					<input type="checkbox" id="divorciado" name="divorciado">
-					<label for="divorciado"> Divorciado</label><br>
+					<label>Email:</label><br>
+					<input type="email" placeholder="name@domain.com">
 				</div>
-				<div class="botao">
-					<button type="button"><i class="fas fa-share"></i>Enviar</button>
-					<button type="button"><i class="fas fa-minus-circle"></i>Cancelar</button>
+				<div class="campos">
+					<label>Telefone:</label><br>
+					<input type="tel" placeholder="(XX) XXXXX-XXXX">
 				</div>
-			</form>
-		</div>
-	</body>
+				<div class="campos">
+					<label>Sexo:</label><br>
+						<select>
+							<option>--Selecione--</option>
+							<option>Masculino</option>
+							<option>Feminino</option>
+						</select>
+				</div>
+			</div>
+			<div class="campos">
+				<label>Estado civil:</label><br>
+				<input type="radio" id="solteiro" name="gender" value="male">
+				<label for="solteiro">Solteiro</label>
+				<input type="radio" id="casado" name="gender" value="female">
+				<label for="casado">Casado</label>
+				<input type="radio" id="divorciado" name="gender" value="other">
+				<label for="divorciado">Divorciado</label>
+			</div>
+			<div class="campos">
+				<label for="resumo">Resumo:</label><br>
+				<textarea id="resumo" name="resumo" rows="5" cols="50">
+				</textarea>	
+			</div>
+			<div class="botao">
+				<button type="button"><i class="fas fa-share"></i>Enviar</button>
+				<button type="button"><i class="fas fa-minus-circle"></i>Cancelar</button>
+			</div>
+		</form>
+	</div>
+</body>
 </html>
