@@ -1,6 +1,6 @@
 function btEnviar(){
-    alert("Dados enviados");  
+    alert("Dados enviados!");  
 }
 function btCancelar(){
-    alert("Operação cancelada"); 
+    alert("Operação cancelada :("); 
 }
