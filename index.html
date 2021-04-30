@@ -4,18 +4,7 @@
 	<meta charset="utf-8" />
 	<title>Formulario</title>
 	<script src="https://kit.fontawesome.com/507941e964.js" crossorigin="anonymous"></script>
-	<script>
-		var name=document.querySelector(".name");
-
-		function btEnvia(){
-			alert("Dados enviados" + name);
-			console.log(name);
-		}
-		function btCancela(){
-			alert("Operação cancelada");
-		}
-	</script>
-
+	<script src="base.js"></script>
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
@@ -110,8 +99,8 @@
 			</div>
 			<hr>
 			<div class="botao">
-				<button type="button" onclick="btEnvia()"><i class="fas fa-share"></i>Enviar</button>
-				<button type="button" onclick="btCancela()"><i class="fas fa-minus-circle"></i>Cancelar</button>
+				<button type="button" onclick="btEnviar()"><i class="fas fa-share"></i>Enviar</button>
+				<button type="button" onclick="btCancelar()"><i class="fas fa-minus-circle"></i>Cancelar</button>
 			</div>
 		</form>
 	</div>
